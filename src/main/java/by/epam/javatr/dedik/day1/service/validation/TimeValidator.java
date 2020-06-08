@@ -12,7 +12,7 @@ public class TimeValidator {
         boolean result = false;
         if (validator.isInteger(month)) {
             int numberMonth = Integer.parseInt(month);
-            if (numberMonth > 0 && numberMonth <= 12) {
+            if (numberMonth > 1 && numberMonth <= 12) {
                 result = true;
             }
         } else {

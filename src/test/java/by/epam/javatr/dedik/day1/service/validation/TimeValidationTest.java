@@ -10,7 +10,7 @@ public class TimeValidationTest {
     private TimeValidator validator;
 
     @BeforeClass
-    public void initialize() {
+    private void initialize() {
         validator = new TimeValidator();
     }
 
