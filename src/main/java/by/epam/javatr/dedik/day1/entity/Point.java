@@ -37,7 +37,7 @@ public class Point implements Comparable<Point> {
         return interval;
     }
 
-    public void calculateInterval() {
+    public double calculateInterval() {
         if (x == 0) {
             interval = y;
         } else if (y == 0) {
@@ -45,6 +45,7 @@ public class Point implements Comparable<Point> {
         } else {
             interval = hypot(x, y);
         }
+        return interval;
     }
 
     @Override
