@@ -1,4 +1,4 @@
-package by.epam.javatr.dedik.day1.service.validation;
+package epam.javatr.dedik.day1.service.validation;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

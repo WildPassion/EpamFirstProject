@@ -2,8 +2,8 @@ package by.epam.javatr.dedik.day1.main;
 
 import by.epam.javatr.dedik.day1.console.ConsoleDemonstrator;
 import by.epam.javatr.dedik.day1.entity.Point;
-import by.epam.javatr.dedik.day1.service.ArithmeticService;
-import by.epam.javatr.dedik.day1.service.StringConverter;
+import epam.javatr.dedik.day1.service.ArithmeticService;
+import epam.javatr.dedik.day1.service.StringConverter;
 
 public class SeventhTask {
     public static void main(String[] args) {

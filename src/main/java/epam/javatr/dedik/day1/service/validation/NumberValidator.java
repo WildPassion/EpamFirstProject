@@ -1,4 +1,4 @@
-package by.epam.javatr.dedik.day1.service.validation;
+package epam.javatr.dedik.day1.service.validation;
 
 public class NumberValidator {
     public boolean isInteger(String number) {

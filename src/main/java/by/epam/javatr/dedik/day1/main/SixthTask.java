@@ -1,8 +1,8 @@
 package by.epam.javatr.dedik.day1.main;
 
 import by.epam.javatr.dedik.day1.console.ConsoleDemonstrator;
-import by.epam.javatr.dedik.day1.service.ArithmeticService;
-import by.epam.javatr.dedik.day1.service.StringConverter;
+import epam.javatr.dedik.day1.service.ArithmeticService;
+import epam.javatr.dedik.day1.service.StringConverter;
 
 import java.time.LocalTime;
 
