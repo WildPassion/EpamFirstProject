@@ -15,62 +15,62 @@ public class TimeValidationTest {
     }
 
     @Test
-    public void isValidMonth_NumberMonth_True() {
+    public void isValidMonth_numberMonth_true() {
         assertTrue(validator.isValidMonth("12"));
     }
 
     @Test
-    public void isValidMonth_NotMonthNumber_False() {
+    public void isValidMonth_notMonthNumber_false() {
         assertFalse(validator.isValidMonth("112"));
     }
 
     @Test
-    public void isValidMonth_NumberMonthWithSymbol_False() {
+    public void isValidMonth_numberMonthWithSymbol_false() {
         assertFalse(validator.isValidMonth("12q"));
     }
 
     @Test
-    public void isValidMonth_UppercaseStringMonth_True() {
+    public void isValidMonth_uppercaseStringMonth_true() {
         assertTrue(validator.isValidMonth("FEBRUARY"));
     }
 
     @Test
-    public void isValidMonth_LowercaseStringMonth_True() {
+    public void isValidMonth_lowercaseStringMonth_true() {
         assertTrue(validator.isValidMonth("february"));
     }
 
     @Test
-    public void isValidMonth_ShortStringMonth_False() {
+    public void isValidMonth_shortStringMonth_false() {
         assertFalse(validator.isValidMonth("Feb"));
     }
 
     @Test
-    public void isValidMonth_NotStringMonth_False() {
+    public void isValidMonth_notStringMonth_false() {
         assertFalse(validator.isValidMonth("Fff"));
     }
 
     @Test
-    public void isValidYear_CorrectYear_True() {
+    public void isValidYear_correctYear_true() {
         assertTrue(validator.isValidYear("2000"));
     }
 
     @Test
-    public void isValidYear_NegativeYear_True() {
+    public void isValidYear_negativeYear_true() {
         assertTrue(validator.isValidYear("-100"));
     }
 
     @Test
-    public void isValidYear_NotNumber_False() {
+    public void isValidYear_notNumber_false() {
         assertFalse(validator.isValidYear("-100q"));
     }
 
     @Test
-    public void isValidYear_LowerLimitNumber_False() {
+    public void isValidYear_lowerLimitNumber_false() {
         assertFalse(validator.isValidYear("-1000"));
     }
 
     @Test
-    public void isValidYear_UpperLimitNumber_False() {
+    public void isValidYear_upperLimitNumber_false() {
         assertFalse(validator.isValidYear("3000"));
     }
 }

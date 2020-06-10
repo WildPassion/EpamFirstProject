@@ -15,42 +15,42 @@ public class NumberValidationTest {
     }
 
     @Test
-    public void isInteger_Integer_True() {
+    public void isInteger_integer_true() {
         assertTrue(validator.isInteger("1000"));
     }
 
     @Test
-    public void isInteger_BigNumber_False() {
+    public void isInteger_bigNumber_false() {
         assertFalse(validator.isInteger("10000000000"));
     }
 
     @Test
-    public void isInteger_NotNumber_False() {
+    public void isInteger_notNumber_false() {
         assertFalse(validator.isInteger("1000q"));
     }
 
     @Test
-    public void isDouble_Double_True() {
+    public void isDouble_double_true() {
         assertTrue(validator.isDouble("123.456"));
     }
 
     @Test
-    public void isDouble_Integer_True() {
+    public void isDouble_integer_true() {
         assertTrue(validator.isDouble("123"));
     }
 
     @Test
-    public void isDouble_BigNumberAfterPoint_True() {
+    public void isDouble_bigNumberAfterPoint_true() {
         assertTrue(validator.isDouble("123.987984651321321546848768451468798415164686451"));
     }
 
     @Test
-    public void isDouble_NotNumber_False() {
+    public void isDouble_notNumber_false() {
         assertFalse(validator.isDouble("123..987984651321321546848768451468798415164686451"));
     }
 
     @Test
-    public void isDouble_BigNumberAfterPointWithSymbol_False() {
+    public void isDouble_bigNumberAfterPointWithSymbol_false() {
         assertFalse(validator.isDouble("123.9879846513213215468487684514687984151646864511q"));
     }
 }
