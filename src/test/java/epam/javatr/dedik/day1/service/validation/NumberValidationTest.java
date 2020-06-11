@@ -1,5 +1,6 @@
 package epam.javatr.dedik.day1.service.validation;
 
+import by.epam.javatr.dedik.day1.service.validation.NumberValidator;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

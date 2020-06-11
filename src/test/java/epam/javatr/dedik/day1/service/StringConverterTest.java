@@ -1,6 +1,7 @@
 package epam.javatr.dedik.day1.service;
 
-import epam.javatr.dedik.day1.service.exception.ConvertException;
+import by.epam.javatr.dedik.day1.service.StringConverter;
+import by.epam.javatr.dedik.day1.service.exception.ConvertException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
