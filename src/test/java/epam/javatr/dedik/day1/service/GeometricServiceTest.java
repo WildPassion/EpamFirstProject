@@ -42,8 +42,15 @@ public class GeometricServiceTest {
     public void nearestPoint_twoPoints_nearestPoint() {
         Point a = new Point(45, 15);
         Point b = new Point(78, 65);
-        a.calculateInterval();
-        b.calculateInterval();
+        Point actual = service.nearestPoint(a, b);
+        Point expected = a;
+        assertSame(actual, expected);
+    }
+
+    @Test
+    public void nearestPoint_equalsPoints_nearestPoint() {
+        Point a = new Point(45, 15);
+        Point b = new Point(45, 15);
         Point actual = service.nearestPoint(a, b);
         Point expected = a;
         assertSame(actual, expected);

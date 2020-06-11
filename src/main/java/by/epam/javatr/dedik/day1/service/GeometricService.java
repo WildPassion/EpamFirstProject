@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.lang.Math.*;
-import static java.lang.Math.toRadians;
 
 public class GeometricService {
     public double calculateNestedSquareArea(double describedSquareArea) {
@@ -20,13 +19,8 @@ public class GeometricService {
     }
 
     public Point nearestPoint(Point a, Point b) {
-        Point result = null;
-        if (a.compareTo(b) > 0) {
-            result = b;
-        } else if (a.compareTo(b) < 0) {
-            result = a;
-        }
-        return result;
+        PointComparator comparator = new PointComparator();
+        return comparator.compare(a, b) <= 0 ? a : b;
     }
 
     public double calculateLengthCircle(int radius) {
