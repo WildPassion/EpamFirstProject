@@ -19,26 +19,26 @@ public class PointComparatorTest {
     public void compare_twoPoints_firstPoint() {
         Point a = new Point(45, 15);
         Point b = new Point(75, 13);
-        int actual = comparator.compare(a,b);
+        int actual = comparator.compare(a, b);
         int expected = -1;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 
     @Test
     public void compare_equalsPoints_firstPoint() {
         Point a = new Point(45, 15);
         Point b = new Point(45, 15);
-        int actual = comparator.compare(a,b);
+        int actual = comparator.compare(a, b);
         int expected = 0;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 
     @Test
     public void compare_twoPoints_secondPoint() {
         Point a = new Point(30, 15);
         Point b = new Point(5, 5);
-        int actual = comparator.compare(a,b);
+        int actual = comparator.compare(a, b);
         int expected = 1;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 }
