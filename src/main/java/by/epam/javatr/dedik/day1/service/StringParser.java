@@ -47,28 +47,4 @@ public class StringParser {
             throw new ParseException("Received value is not valid year.");
         }
     }
-
-    public int[] toArray(String numbers) {
-        int[] array = new int[numbers.length()];
-        int length = 0;
-        boolean isEmptyElements = false;
-        for (int i = 0, j = 0; i < numbers.length(); i++) {
-            if (numberValidator.isInteger(String.valueOf(numbers.charAt(i)))) {
-                array[j] = Integer.parseInt(String.valueOf(numbers.charAt(i)));
-                length++;
-                j++;
-            } else {
-                isEmptyElements = true;
-            }
-        }
-        if (isEmptyElements) {
-            if (length == 0) {
-                return null;
-            }
-            int[] result = new int[length];
-            System.arraycopy(array, 0, result, 0, length);
-            return result;
-        }
-        return array;
-    }
 }

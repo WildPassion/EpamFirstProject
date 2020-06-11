@@ -128,25 +128,4 @@ public class StringParserTest {
             fail(e.getMessage());
         }
     }
-
-    @Test
-    public void toArray_number_numberArray() {
-        String actual = "456789";
-        int[] expected = {4, 5, 6, 7, 8, 9};
-        assertEquals(parser.toArray(actual), expected);
-    }
-
-    @Test
-    public void toArray_numbersWithSymbols_numberArray() {
-        String actual = "456qwe789";
-        int[] expected = {4, 5, 6, 7, 8, 9};
-        assertEquals(parser.toArray(actual), expected);
-    }
-
-    @Test
-    public void toArray_symbols_emptyArray() {
-        String actual = "qwe";
-        int[] expected = null;
-        assertEquals(parser.toArray(actual), expected);
-    }
 }
