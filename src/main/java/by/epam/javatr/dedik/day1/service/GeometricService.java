@@ -34,7 +34,7 @@ public class GeometricService {
     private Double calculateTangent(int angle) {
         Double result;
         if (angle == 90 || angle % 180 == 90) {
-            result = null;
+            result = Double.MAX_VALUE;
         } else {
             result = BigDecimal.valueOf(tan(toRadians(angle)))
                     .setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();

@@ -1,14 +1,6 @@
 package by.epam.javatr.dedik.day1.service;
 
-import by.epam.javatr.dedik.day1.entity.Point;
-
-import java.math.BigDecimal;
-import java.time.LocalTime;
-import java.time.Month;
-import java.util.ArrayList;
-import java.util.List;
-
-import static java.lang.Math.*;
+import static java.lang.Math.pow;
 
 public class ArithmeticService {
     public static final int LIMIT = 2;
