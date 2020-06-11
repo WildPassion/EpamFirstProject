@@ -6,7 +6,8 @@ import by.epam.javatr.dedik.day1.service.validation.TimeValidator;
 
 import java.time.Month;
 
-public class StringConverter {
+public class StringParser
+{
     private NumberValidator numberValidator = new NumberValidator();
     private TimeValidator timeValidator = new TimeValidator();
 
