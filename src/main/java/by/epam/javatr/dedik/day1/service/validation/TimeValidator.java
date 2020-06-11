@@ -1,4 +1,4 @@
-package epam.javatr.dedik.day1.service.validation;
+package by.epam.javatr.dedik.day1.service.validation;
 
 import java.time.Month;
 
