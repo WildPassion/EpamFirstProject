@@ -1,8 +1,8 @@
-package by.epam.javatr.dedik.day1.service;
+package by.epam.javatr.dedik.day1.parser;
 
-import by.epam.javatr.dedik.day1.service.exception.ParseException;
-import by.epam.javatr.dedik.day1.service.validation.NumberValidator;
-import by.epam.javatr.dedik.day1.service.validation.TimeValidator;
+import by.epam.javatr.dedik.day1.exception.ParseException;
+import by.epam.javatr.dedik.day1.validation.NumberValidator;
+import by.epam.javatr.dedik.day1.validation.TimeValidator;
 
 import java.time.Month;
 

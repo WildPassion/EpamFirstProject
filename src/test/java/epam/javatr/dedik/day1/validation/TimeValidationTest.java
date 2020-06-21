@@ -1,6 +1,6 @@
-package epam.javatr.dedik.day1.service.validation;
+package epam.javatr.dedik.day1.validation;
 
-import by.epam.javatr.dedik.day1.service.validation.TimeValidator;
+import by.epam.javatr.dedik.day1.validation.TimeValidator;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

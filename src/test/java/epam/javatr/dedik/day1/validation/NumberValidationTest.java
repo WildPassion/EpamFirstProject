@@ -1,6 +1,6 @@
-package epam.javatr.dedik.day1.service.validation;
+package epam.javatr.dedik.day1.validation;
 
-import by.epam.javatr.dedik.day1.service.validation.NumberValidator;
+import by.epam.javatr.dedik.day1.validation.NumberValidator;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,7 +17,7 @@ public class NumberValidationTest {
 
     @Test
     public void isInteger_integer_true() {
-        assertTrue(validator.isInteger("1000"));
+        assertTrue(validator.isInteger("-1000"));
     }
 
     @Test

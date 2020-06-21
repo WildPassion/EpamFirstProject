@@ -1,7 +1,7 @@
-package epam.javatr.dedik.day1.service;
+package epam.javatr.dedik.day1.entity.comparator;
 
 import by.epam.javatr.dedik.day1.entity.Point;
-import by.epam.javatr.dedik.day1.service.PointComparator;
+import by.epam.javatr.dedik.day1.entity.comparator.PointComparator;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package by.epam.javatr.dedik.day1.service.validation;
+package by.epam.javatr.dedik.day1.validation;
 
 import java.time.Month;
 
@@ -16,9 +16,11 @@ public class TimeValidator {
                 result = true;
             }
         } else {
-            for (Month enumMonth : Month.values()) {
-                if (month.compareToIgnoreCase(enumMonth.name()) == 0) {
+            int i = 0;
+            while (i < Month.values().length) {
+                if (month.compareToIgnoreCase(Month.values()[i].name()) == 0) {
                     result = true;
+                    break;
                 }
             }
         }

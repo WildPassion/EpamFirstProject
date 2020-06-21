@@ -1,7 +1,7 @@
-package epam.javatr.dedik.day1.service;
+package epam.javatr.dedik.day1.parser;
 
-import by.epam.javatr.dedik.day1.service.StringParser;
-import by.epam.javatr.dedik.day1.service.exception.ParseException;
+import by.epam.javatr.dedik.day1.parser.StringParser;
+import by.epam.javatr.dedik.day1.exception.ParseException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

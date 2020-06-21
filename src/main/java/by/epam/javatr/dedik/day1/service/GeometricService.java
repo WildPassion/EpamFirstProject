@@ -1,6 +1,7 @@
 package by.epam.javatr.dedik.day1.service;
 
 import by.epam.javatr.dedik.day1.entity.Point;
+import by.epam.javatr.dedik.day1.entity.comparator.PointComparator;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

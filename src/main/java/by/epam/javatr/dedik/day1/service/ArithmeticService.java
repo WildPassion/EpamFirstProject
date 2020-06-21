@@ -1,5 +1,7 @@
 package by.epam.javatr.dedik.day1.service;
 
+import java.util.Random;
+
 import static java.lang.Math.pow;
 
 public class ArithmeticService {

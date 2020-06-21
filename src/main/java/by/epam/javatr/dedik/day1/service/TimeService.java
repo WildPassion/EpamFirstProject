@@ -8,6 +8,8 @@ public class TimeService {
     private static final int SECONDS_PER_HOUR = 3600;
     private static final int SECONDS_PER_MINUTE = 60;
 
+    public static final int MAX_YEAR = 3000;
+
     public LocalTime calculateTime(int secondsPerDay) {
         return LocalTime.of(secondsPerDay / SECONDS_PER_HOUR,
                 (secondsPerDay % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE,

@@ -1,4 +1,4 @@
-package by.epam.javatr.dedik.day1.service;
+package by.epam.javatr.dedik.day1.entity.comparator;
 
 import by.epam.javatr.dedik.day1.entity.Point;
 
